@@ -1,35 +1,34 @@
-// var rat = ["1912", "1924", "1936", "1948", "1960", "1972", "1984", "1996", "2008"];
-// var ox = ["1913", "1925", "1937", "1949", "1961", "1973", "1985", "1997", "2009"];
-// var tiger = [1914, 1926, 1938, 1950, 1962, ]
-var rat;
-var ox;
-var tiger;
-var rabbit;
-var dragon;
-var snake;
-var horse;
-var sheep;
-var monkey;
-var rooster;
-var dog;
-var pig;
-
-
 var calculation = function(year) {
   var yearCalc = (year - 1912) % 12;
   console.log(yearCalc);
   if (yearCalc === 0) {
-    var result = "rat"
+    var result = "Rat";
   } else if (yearCalc === 1) {
-    var result = "ox";
+    var result = "Ox";
+  } else if (yearCalc === 2) {
+    var result= "Tiger";
+  } else if (yearCalc === 3) {
+    var result= "Rabbit";
+  } else if (yearCalc === 4) {
+    var result= "Dragon";
+  } else if (yearCalc === 5) {
+    var result= "Snake";
+  } else if (yearCalc === 6) {
+    var result= "Horse";
+  } else if (yearCalc === 7) {
+    var result= "Sheep";
+  } else if (yearCalc === 8) {
+    var result= "Monkey";
+  } else if (yearCalc === 9) {
+    var result= "Rooster";
+  } else if (yearCalc === 10) {
+    var result= "Dog";
+  } else if (yearCalc === 11) {
+    var result= "Pig";
   }
+
   return result;
 };
-
-
-
-
-
 
 $(document).ready(function() {
   $("form").submit(function(event) { // takes the user input
